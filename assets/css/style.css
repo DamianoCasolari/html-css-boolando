@@ -127,7 +127,7 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 40px;
-    
+
 }
 
 .col4 {
@@ -144,6 +144,18 @@ nav {
     width: 100%;
 }
 
+#second_img {
+    display: none;
+}
+
+.col4_card:hover #second_img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .col4 .heart {
     font-size: 25px;
     position: absolute;
@@ -151,4 +163,9 @@ nav {
     right: 0;
     background-color: var(--Zl-white);
     padding: 3px 10px;
+    cursor: pointer;
+}
+
+.col4 .heart:hover {
+    color: var(--Zl-discount);
 }
