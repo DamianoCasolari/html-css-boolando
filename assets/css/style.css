@@ -80,6 +80,10 @@ body {
     text-decoration: line-through;
 }
 
+.max-wdth {
+    max-width: 1170px;
+}
+
 /* #endregion--------Utility selectors-------- */
 
 
@@ -144,11 +148,11 @@ nav {
     width: 100%;
 }
 
-#second_img {
+.second_img {
     display: none;
 }
 
-.col4_card:hover #second_img {
+.col4_card:hover .second_img {
     display: block;
     width: 100%;
     position: absolute;
@@ -169,3 +173,36 @@ nav {
 .col4 .heart:hover {
     color: var(--Zl-discount);
 }
+
+
+/* --------footer selectors-------- */
+
+#app_footer {
+    background-color: var(--Zl-dark);
+    padding: 15px 0;
+    
+}
+
+.footer_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_card *{
+    color: var(--Zl-white);
+    margin: 5px 0;
+}
+
+.footer_card a {
+    font-size: 10px;
+}
+
+.social_info {
+    text-align: center;
+}
+
+.footer_card a i {
+    font-size: 15px;
+}
+
+
