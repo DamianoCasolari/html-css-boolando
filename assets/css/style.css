@@ -1,5 +1,65 @@
+/* --------Generic selectors-------- */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+/* #region--------Utility selectors-------- */
+
+:root {
+    --Zl-orange : #ff6900;
+    --Zl-white : #ffffff;
+    --Zl-dark : #1a1a1a;
+    --Zl-discount : #ff0000;
+    --Zl-sustainability : #008000;
+
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+/* #endregion--------Utility selectors-------- */
+
+
+/* --------Header selectors-------- */
+
+#app_header {
+    background-color: var(--Zl-orange);
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.banner * {
+    color: var(--Zl-white);
+    padding: 0 2.5px;
+    }
+    
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    padding: 10px;
+}
+
+.gender {
+    font-size: 12px;
+    font-weight: 600;
 }
