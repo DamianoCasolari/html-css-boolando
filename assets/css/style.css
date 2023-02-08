@@ -18,11 +18,11 @@ body {
 /* #region--------Utility selectors-------- */
 
 :root {
-    --Zl-orange : #ff6900;
-    --Zl-white : #ffffff;
-    --Zl-dark : #1a1a1a;
-    --Zl-discount : #ff0000;
-    --Zl-sustainability : #008000;
+    --Zl-orange: #ff6900;
+    --Zl-white: #ffffff;
+    --Zl-dark: #1a1a1a;
+    --Zl-discount: #ff0000;
+    --Zl-sustainability: #008000;
 
 }
 
@@ -33,7 +33,7 @@ body {
 
 .Applied_labels {
     position: absolute;
-    bottom : 35px;
+    bottom: 35px;
     left: 0;
     display: flex;
     gap: 0.5rem;
@@ -47,6 +47,7 @@ body {
     font-weight: 600;
     padding: 3px 10px;
 }
+
 .sustainability {
     background-color: var(--Zl-sustainability);
     color: var(--Zl-white);
@@ -59,21 +60,26 @@ body {
     font-size: 12px;
     color: var(--Zl-dark);
 }
+
 .model {
     font-size: 17px;
     font-weight: 600;
 }
+
 .price_card {
     font-weight: 500;
     font-size: 14px;
 }
+
 .price {
-color: var(--Zl-discount);
+    color: var(--Zl-discount);
+    font-weight: 600;
 }
 
 .old_price {
     text-decoration: line-through;
 }
+
 /* #endregion--------Utility selectors-------- */
 
 
@@ -91,8 +97,8 @@ color: var(--Zl-discount);
 .banner * {
     color: var(--Zl-white);
     padding: 0 2.5px;
-    }
-    
+}
+
 
 .banner {
     display: flex;
@@ -118,13 +124,16 @@ nav {
 
 .row {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
     width: 100%;
-    margin-top: 40px;
+    margin-bottom: 40px;
+    
 }
 
 .col4 {
-    width: calc(100% / 12 * 4);
+    width: calc((100% / 12 * 4) - 10px);
+    min-width: 180px;
+    margin: 40px 5px 0 5px;
 }
 
 .col4_card {
@@ -133,16 +142,13 @@ nav {
 
 .col4 img {
     width: 100%;
-} 
+}
 
 .col4 .heart {
     font-size: 25px;
     position: absolute;
-    top : 20px;
+    top: 20px;
     right: 0;
     background-color: var(--Zl-white);
     padding: 3px 10px;
 }
-
-
-
